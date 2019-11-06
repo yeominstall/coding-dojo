@@ -6,12 +6,7 @@ using namespace std;
 
 vector<int> slice(vector<int> array, int start, int end)
 {
-    vector<int> temp;
-    for(int i = start; i < end; i++) 
-    {
-        temp.push_back(array[i]);
-    }
-    return temp;
+    return vector<int>(array.begin() + start, array.begin() + end);
 }
 
 int knumber (vector<int> array, vector<int> command)
